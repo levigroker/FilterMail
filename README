@@ -1,0 +1,61 @@
+Filter Mail
+A manually activated mail filing/filtering Script for the Mac OS X "Mail" application.
+By Levi Brown <mailto:levi@grokers.net>
+Version 3.0.2 April 13th, 2012
+
+This script works on the current selection in Mail, and is intended to be used
+with the Script Menu.  Select a message or range of messages and run the script
+on them. Any messages in the selection meeting the specified criteria will be
+moved into the specified mailbox.  Any messages in the selection for which no
+filter is found will result in a prompt to create a new filter.  For more
+information about the Script Menu please visit:
+http://www.apple.com/applescript/scriptmenu/
+
+To add filters run the script and follow the given instructions, or manually
+modify the filters file defined by the 'pFilterFileName' and
+'pFilterFileLocation' properties.
+
+* This script has been tested on Mac OS X 10.2.x through 10.5.5 under US English
+and may contain i18n issues which are not accounted for.
+
+Please feel free to contact me with improvements and feedback.
+
+Release History:
+1.0   September 6th, 2002: Internal initial release.
+2.0   October 22nd, 2002: Separated the filters to a file which
+      now gets read in and parsed when it changes.
+2.0.1 October 29nd, 2002: Added error checking for the case when
+      the target mailbox does not exist.  Now dialogs will be displayed.
+2.0.2 January 11th, 2004: Added support for either Macintosh style line
+      endings or Unix style line endings to the filters file.
+3.0 January 9th, 2008: Re-wrote file parsing mechanism, added support
+for dynamic creation and persistence of filters, and support for mailbox
+creation and filter editing.
+3.0.1 October 1st, 2008: Added sanity check for filter parser to
+avoid importing unparsable lines as empty filters.
+3.0.2 April 13th, 2012: Fixed issue where null senderContains in filter caused script to
+      abort.
+
+Copyright (c) 2002-2012 Levi Brown.
+This work is licensed under the Creative Commons Attribution-Noncommercial-No
+Derivative Works 3.0 United States License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-nd/3.0/us/ or send a letter to
+Creative Commons, 171 Second Street, Suite 300, San Francisco, California,
+94105, USA.
+
+1. DISCLAIMER OF WARRANTY.  ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS
+AND WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE OR NON-INFRINGEMENT ARE DISCLAIMED, EXCEPT TO THE EXTENT THAT
+THESE DISCLAIMERS ARE HELD TO BE LEGALLY INVALID.
+
+2. LIMITATION OF LIABILITY.  TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT
+WILL THE AUTHOR OR THE AUTHOR'S LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT
+OR DATA, OR FOR SPECIAL, INDIRECT, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE
+DAMAGES, HOWEVER CAUSED REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF OR
+RELATED TO THE USE OF OR INABILITY TO USE SOFTWARE, EVEN IF THE AUTHOR HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  In no event will the author's
+liability to you, whether in contract, tort (including negligence), or
+otherwise, exceed the amount paid by you for Software under this Agreement. The
+foregoing limitations will apply even if the above stated warranty fails of its
+essential purpose. Some states do not allow the exclusion of incidental or
+consequential damages, so some of the terms above may not be applicable to you.
