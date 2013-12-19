@@ -1,7 +1,7 @@
 Filter Mail
 A manually activated mail filing/filtering Script for the Mac OS X "Mail" application.
-By Levi Brown <mailto:levi@grokers.net>
-Version 3.0.2 April 13th, 2012
+By Levi Brown <mailto: levigroker@gmail.com>
+Version 3.0.3 December 19th, 2013
 
 This script works on the current selection in Mail, and is intended to be used
 with the Script Menu.  Select a message or range of messages and run the script
@@ -15,7 +15,7 @@ To add filters run the script and follow the given instructions, or manually
 modify the filters file defined by the 'pFilterFileName' and
 'pFilterFileLocation' properties.
 
-* This script has been tested on Mac OS X 10.2.x through 10.5.5 under US English
+* This script has been tested on Mac OS X 10.2.x through 10.9.1 under US English
 and may contain i18n issues which are not accounted for.
 
 Please feel free to contact me with improvements and feedback.
@@ -35,8 +35,9 @@ creation and filter editing.
 avoid importing unparsable lines as empty filters.
 3.0.2 April 13th, 2012: Fixed issue where null senderContains in filter caused script to
       abort.
+3.0.3 December 19th, 2013: Mark messages as read as they get filtered.
 
-Copyright (c) 2002-2012 Levi Brown.
+Copyright (c) 2002-2014 Levi Brown.
 This work is licensed under the Creative Commons Attribution-Noncommercial-No
 Derivative Works 3.0 United States License. To view a copy of this license,
 visit http://creativecommons.org/licenses/by-nc-nd/3.0/us/ or send a letter to
